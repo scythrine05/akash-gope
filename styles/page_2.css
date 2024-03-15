@@ -1,0 +1,22 @@
+.page_2-component {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  font-family: "Akshar", sans-serif;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-wrap: break-word;
+}
+
+.page_2-component div {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.page_2-component div p {
+  font-size: 35px;
+}

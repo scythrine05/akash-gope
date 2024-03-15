@@ -1,13 +1,192 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./styles/main.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/page_1.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/page_2.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/page_3.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/page_4.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/gallery.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akash Gope</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <!-- First Page -->
+
+    <main class="page_1-component">
+      <div class="component-overlay"></div>
+      <header>
+        <div class="logo-wrapper">
+          <img src="/assets/icons/logo-white.png" alt="logo" id="logo" />
+        </div>
+      </header>
+      <section class="page_1-text-wrapper">
+        <h1>akash gope</h1>
+        <div>
+          <span>architect</span><span>.</span><span>designer</span><span>.</span
+          ><span>engineer</span>
+        </div>
+      </section>
+      <footer class="page_1-footer">
+        <div>
+          <span>scroll</span>
+          <span class="vl"></span>
+          <span class="wb"></span>
+        </div>
+      </footer>
+      <div class="web-content">
+        <div class="whitespace"></div>
+      </div>
+    </main>
+
+    <!-- Second Page -->
+
+    <main class="page_2-component">
+      <div>
+        <p id="page_2">
+          I am an enthusiastic BIM Modeler, freshly graduated in Civil
+          engineering, eager to embark on a career in the Architecture,
+          Engineering, and Construction (AEC) industry. My passion lies in
+          harnessing the transformative potential of Building Information
+          Modeling (BIM) technology. My academic background has equipped me with
+          a strong foundation in architectural and engineering principles. At
+          the same time, hands-on experience in 3D modeling, documentation, and
+          clash detection during my studies has honed my skills.
+        </p>
+      </div>
+    </main>
+
+    <!-- Third Page -->
+
+    <main class="page_3-component">
+      <header>
+        <h1>what i do</h1>
+      </header>
+      <section>
+        <div class="page_3-content">
+          <div class="page_3-img-wrapper">
+            <img src="/assets/images/draft_img.jpg" alt="expert" />
+          </div>
+          <div class="page_3-text-wrapper">
+            <h1>Drafting</h1>
+            <p>
+              Everything we have accomplished and strive for in the future is
+              rooted in the belief that technological evolution, innovation and
+              sustainability are interconnected. They all have the same purpose.
+            </p>
+          </div>
+        </div>
+        <div class="page_3-content">
+          <div class="page_3-img-wrapper">
+            <img src="/assets/images/model_img.png" alt="expert" />
+          </div>
+          <div class="page_3-text-wrapper">
+            <h1>Modelling</h1>
+            <p>
+              Everything we have accomplished and strive for in the future is
+              rooted in the belief that technological evolution, innovation and
+              sustainability are interconnected. They all have the same purpose.
+            </p>
+          </div>
+        </div>
+        <div class="page_3-content">
+          <div class="page_3-img-wrapper">
+            <img src="/assets/images/render_img.png" alt="expert" />
+          </div>
+          <div class="page_3-text-wrapper">
+            <h1>Rendering</h1>
+            <p>
+              Everything we have accomplished and strive for in the future is
+              rooted in the belief that technological evolution, innovation and
+              sustainability are interconnected. They all have the same purpose.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Gallery -->
+
+    <section class="gallery_component">
+    <div class="gallery">
+      <div class="image">
+        <img src="/assets/gallery/gallery_1.png" alt="">
+      </div>
+      <div class="image">
+        <img src="/assets/gallery/gallery_2.png" alt="">
+      </div><div class="image">
+        <img src="/assets/gallery/gallery_3.png" alt="">
+      </div><div class="image">
+        <img src="/assets/gallery/gallery_4.png" alt="">
+      </div><div class="image">
+        <img src="/assets/gallery/gallery_5.png" alt="">
+      </div><div class="image">
+        <img src="/assets/gallery/gallery_6.png" alt="">
+      </div>
+    </div>
+
+    <!-- Fourth Page -->
+    <main class="page_4-component">
+      <header>
+        <h1>get in touch</h1>
+      </header>
+      <form class="contact-form row">
+        <div class="form-field col x-100">
+          <input id="name" class="input-text js-input" type="text" required />
+          <label class="label" for="name">Name</label>
+        </div>
+        <div class="form-field col x-100">
+          <input
+            id="email"
+            class="input-text js-input"
+            type="email"
+            required
+            autocomplete="off"
+          />
+          <label class="label" for="email">Email</label>
+        </div>
+        <div class="form-field col x-100">
+          <input
+            id="message"
+            class="input-text js-input"
+            type="text"
+            required
+            autocomplete="off"
+          />
+          <label class="label" for="message">Message</label>
+        </div>
+        <div class="form-field col x-100 align-center">
+          <input
+            class="submit-btn cursor-scale rotate"
+            type="submit"
+            value="Submit"
+            autocomplete="off"
+          />
+        </div>
+      </form>
+      <footer>
+        <div>
+          <div><i class="bi bi-telephone"></i><span>+91 99987911</span></div>
+          <div>
+            <i class="bi bi-envelope"></i>
+            <span> akashgope495@gmail.com</span>
+          </div>
+        </div>
+        <div>
+          Desinged and Developed by
+          <a href="https://rohan-murmu.vercel.app/" target="_">Rohan</a>
+        </div>
+      </footer>
+    </main>
   </body>
+  <script src="main.js" type="module"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Akshar:wght@300..700&display=swap");
+  </style>
 </html>
