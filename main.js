@@ -1,5 +1,6 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { CSSRulePlugin } from "gsap/all";
 
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -17,8 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 });
-
-gsap.registerPlugin(ScrollTrigger);
 
 const additionalX = { val: 0 };
 let offset = 0;
@@ -46,11 +45,10 @@ images.forEach((item) => {
         offset += additionalX.val;
         x = (parseFloat(x) + offset) % -Number(sliderWidth * 0.5);
         return x;
-      })
-    }
+      }),
+    },
   });
 });
-
 
 var textboxes = document.querySelectorAll(".input-text");
 
@@ -66,5 +64,28 @@ textboxes.forEach(function (textbox) {
       // If it's empty, remove the 'not-empty' class
       this.classList.remove("not-empty");
     }
+  });
+});
+
+gsap.registerPlugin(ScrollTrigger, CSSRulePlugin);
+
+let reveal = document.querySelectorAll(".reveal");
+
+reveal.forEach((el) => {
+  let headings = el.querySelectorAll("h1, p, img");
+
+  let tl = gsap.timeline().from(headings, {
+    y: 80,
+    stagger: 0.05,
+    opacity: 0,
+    duration: 1,
+    ease: "power3.out",
+  });
+
+  ScrollTrigger.create({
+    trigger: el,
+    start: "top top",
+    toggleActions: "play none none reverse ",
+    animation: tl,
   });
 });

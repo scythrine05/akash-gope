@@ -7,16 +7,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-wrap: break-word;
 }
 
 .page_2-component div {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
   width: 90%;
 }
 
 .page_2-component div p {
-  font-size: 35px;
+  font-size: clamp(1.5em, 4vw, 35px);
 }

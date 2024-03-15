@@ -1,10 +1,10 @@
 .page_1-component {
-  background-image: url("/public/assets/images/landing_back.jpg");
+  background-image: url("/assets/images/landing_back.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
   font-family: "Advent Pro", sans-serif;
   font-optical-sizing: auto;
@@ -32,22 +32,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   z-index: 1;
   position: relative;
   z-index: 1;
 }
 
 .page_1-text-wrapper h1 {
-  font-size: 145px;
+  font-size: clamp(4em, 8vw, 145px);
   font-weight: 300;
 }
+
 .page_1-text-wrapper div {
   width: 30%;
   display: flex;
   justify-content: space-around;
 }
+
 .page_1-text-wrapper div span {
-  font-size: 25px;
+  font-size: clamp(1em, 3vw, 25px);
 }
 
 .page_1-component footer div {
@@ -61,6 +64,10 @@
   align-items: center;
 }
 
+.page_1-footer div span{
+  font-size: clamp(0.8em, 2vw, 16px);
+}
+
 .vl {
   border-left: 2px solid #fff;
   height: 40px;
@@ -72,9 +79,4 @@
   height: 50px;
   width: 50px;
   border-radius: 50%;
-}
-
-.white-space {
-  height: 100vh;
-  width: 100%;
 }

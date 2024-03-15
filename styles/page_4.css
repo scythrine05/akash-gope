@@ -12,9 +12,10 @@
 }
 
 .page_4-component header h1 {
-  font-size: 100px;
+  font-size: clamp(4em, 8vw, 100px);
   font-weight: 400;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .row:after {
@@ -70,7 +71,7 @@
   left: 20px;
   bottom: 11px;
   font-family: "Akshar", sans-serif;
-  font-size: clamp(12px, 2vw, 20px);
+  font-size: clamp(16px, 2vw, 20px);
   line-height: 26px;
   font-weight: 400;
   color: #000;
@@ -86,7 +87,7 @@
   border-radius: 20px;
   font-family: "Akshar", sans-serif;
   text-transform: uppercase;
-  font-size: clamp(12px, 2vw, 18px);
+  font-size: clamp(16px, 2vw, 20px);
   line-height: 24px;
   padding: 8px 40px;
   cursor: pointer;
@@ -110,6 +111,9 @@
   font-family: "Akshar", sans-serif;
 }
 
+.page_4-footer-content {
+  font-size: clamp(10px, 1.5vw, 18px);
+}
 
 .page_4-component footer div:nth-child(1) span {
   margin-left: 10px;
@@ -119,3 +123,4 @@
   color: #000;
   font-weight: 500;
 }
+
