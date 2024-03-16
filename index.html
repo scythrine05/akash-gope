@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/page_3.css" type="text/css" />
     <link rel="stylesheet" href="./styles/page_4.css" type="text/css" />
     <link rel="stylesheet" href="./styles/gallery.css" type="text/css" />
+    <link rel="stylesheet" href="./styles/preloader.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akash Gope</title>
   </head>
@@ -66,7 +67,7 @@
       </header>
       <section>
         <div class="page_3-content">
-            <img src="/assets/images/draft_img.jpg" alt="expert" class="reveal"/>
+            <img src="/assets/images/draft_img.jpg" alt="expert" class="reveal-img"/>
           <div class="page_3-text-wrapper reveal">
             <h1>Drafting</h1>
             <p>
@@ -77,7 +78,7 @@
           </div>
         </div>
         <div class="page_3-content">
-            <img src="/assets/images/model_img.png" alt="expert" class="reveal"/>
+            <img src="/assets/images/model_img.png" alt="expert" class="reveal-img"/>
           <div class="page_3-text-wrapper reveal">
             <h1>Modelling</h1>
             <p>
@@ -88,7 +89,7 @@
           </div>
         </div>
         <div class="page_3-content">
-            <img src="/assets/images/render_img.png" alt="expert" class="reveal" />
+            <img src="/assets/images/render_img.png" alt="expert" class="reveal-img" />
           <div class="page_3-text-wrapper reveal">
             <h1>Rendering</h1>
             <p>
@@ -105,24 +106,25 @@
 
     <section class="gallery_component">
     <div class="gallery">
-      <div class="image">
+      <div class="gallery-image-wrapper">
         <img src="/assets/gallery/gallery_1.png" alt="">
       </div>
-      <div class="image">
+      <div class="gallery-image-wrapper">
         <img src="/assets/gallery/gallery_2.png" alt="">
-      </div><div class="image">
+      </div><div class="gallery-image-wrapper">
         <img src="/assets/gallery/gallery_3.png" alt="">
-      </div><div class="image">
+      </div><div class="gallery-image-wrapper">
         <img src="/assets/gallery/gallery_4.png" alt="">
-      </div><div class="image">
+      </div><div class="gallery-image-wrapper">
         <img src="/assets/gallery/gallery_5.png" alt="">
-      </div><div class="image">
+      </div><div class="gallery-image-wrapper">
         <img src="/assets/gallery/gallery_6.png" alt="">
       </div>
     </div>
     </section>
 
     <!-- Fourth Page -->
+
     <main class="page_4-component">
       <header>
         <h1>get in touch</h1>
@@ -170,11 +172,22 @@
           </div>
         </div>
         <div class="page_4-footer-content">
-          Desinged and Developed by
+          Designed and Developed by
           <a href="https://rohan-murmu.vercel.app/" target="_">Rohan</a>
         </div>
       </footer>
     </main>
+
+    <!-- Preloader -->
+
+    <div class="preloader">
+      <div class="preloader-content">
+        <div class="preloader-text">
+          <div class="counter"><p>100%</p></div>
+        </div>
+      </div>
+    </div>
+
   </body>
   <script src="main.js" type="module"></script>
   <style>

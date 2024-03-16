@@ -39,18 +39,29 @@
 }
 
 .page_1-text-wrapper h1 {
-  font-size: clamp(4em, 8vw, 145px);
+  font-size: clamp(5em, 9vw, 145px);
   font-weight: 300;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.page_1-text-wrapper h1 span {
+  position: relative;
+  top: 100vw;
 }
 
 .page_1-text-wrapper div {
-  width: 30%;
+  min-width: 30vw;
   display: flex;
   justify-content: space-around;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  
 }
 
 .page_1-text-wrapper div span {
+  position: relative;
   font-size: clamp(1em, 3vw, 25px);
+  top: 100vw;
+  text-align: center;
 }
 
 .page_1-component footer div {
@@ -64,7 +75,7 @@
   align-items: center;
 }
 
-.page_1-footer div span{
+.page_1-footer div span {
   font-size: clamp(0.8em, 2vw, 16px);
 }
 
