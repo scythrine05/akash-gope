@@ -54,8 +54,16 @@ function startLoader() {
         opacity: 0,
         ease: "power3.inOut",
         duration: 1,
-        delay: 2,
+        delay: 1,
         display: "none",
+      });
+
+      gsap.to(".logo-wrapper img", {
+        opacity: 1,
+        stagger: 0.1,
+        ease: "power3.inOut",
+        duration: 1,
+        delay: 2,
       });
 
       gsap.to(".page_1-text-wrapper h1 span", {

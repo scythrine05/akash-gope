@@ -24,7 +24,15 @@
 .logo-wrapper {
   height: 40px;
   width: 40px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
+
+.logo-wrapper img {
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+}
+
 
 .page_1-text-wrapper {
   height: 60vh;
@@ -54,7 +62,6 @@
   display: flex;
   justify-content: space-around;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  
 }
 
 .page_1-text-wrapper div span {
